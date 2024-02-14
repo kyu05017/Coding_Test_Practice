@@ -21,7 +21,7 @@ class 최빈값_구하기 {
             // 아닌 경우 지정한 기본값을 반환 한다.
             int count = map.getOrDefualt(number,0) + 1;
 
-            //new int[]{1,1,2,3,4}
+            //new int[]{1,1,2,3}
             
             // 1 회차에서는 arr에 값이 map에 키로 존재하지 않기 때문에 
             // 1 > 0으로 count의 값이 더 크다
@@ -39,7 +39,10 @@ class 최빈값_구하기 {
             // count가 maxCount보다 작으며 같지 않기 때문에 조건문을 통과하지 못한다.
             // maxCount는 2, answer은 1
 
-            
+            //4회차에서도 {3}이 들어오지만 카운트는 1이 되고
+            // 어떠한 조건에도 통과하지 못하고
+            // 반복문이 종료 되기에 
+            // 반환값은 1이 된다.
             if(count > maxCount){
                 maxCount = count;
                 answer = number;
