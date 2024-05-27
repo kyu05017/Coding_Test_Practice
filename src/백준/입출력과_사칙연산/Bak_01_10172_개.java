@@ -10,7 +10,7 @@ public class Bak_01_10172_개 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		StringBuilder sb = new StringBuilder();
 
-		String re = sb
+		String re = sb 
 				.append("|").append("\\").append("_").append("/").append("|").append("\n")
 				.append("|").append("q").append(" ").append("p").append("|").append(" ").append(" ").append(" ").append("/").append("}").append("\n")
 				.append("(").append(" ").append("0").append(" ").append(")").append("\"").append("\"").append("\"").append("\\").append("\n")
