@@ -1,3 +1,5 @@
+package 프로그래머스.Lv0.피자_나눠_먹기_2;
+
 /**
     문제 설명 :
     머쓱이네 피자가게는 피자를 여섯 조각으로 잘라 줍니다.
@@ -6,7 +8,7 @@
     최소 몇 판을 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.
 */
 class 피자_나눠_먹기_2 {
-    public solution(int a) {
+    public int solution(int a) {
         int answer = 1;
 
         /*
@@ -19,6 +21,7 @@ class 피자_나눠_먹기_2 {
             인원과 6조각의 최소공배수를 구하고
             해당 값을 6으로 나눠도 된다
         */
+        int n = 0;
         while(true){
             if((6*answer)%n == 0)break;
             answer++;

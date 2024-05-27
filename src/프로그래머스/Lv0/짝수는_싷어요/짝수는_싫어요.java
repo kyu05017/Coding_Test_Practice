@@ -1,4 +1,4 @@
-
+package 프로그래머스.Lv0.짝수는_싷어요;
 /**
     문제설명 :
     정수 n이 매개변수로 주어질 때, 
@@ -6,9 +6,11 @@
     solution 함수를 완성해주세요.
 */
 import java.util.*;
+import java.util.stream.IntStream;
+
 class Solution {
     public int[] solution(int n ) {
-        int[] result = Intstream.rangeClosed(0,n).filter(e -> e%2 !=0).toArray();
+        int[] result = IntStream.rangeClosed(0,n).filter(e -> e%2 !=0).toArray();
 
         /*
             IntStream 선언으로 스트림을 만들어주고
