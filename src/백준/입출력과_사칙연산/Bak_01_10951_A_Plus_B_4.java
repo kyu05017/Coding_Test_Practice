@@ -20,6 +20,5 @@ public class Bak_01_10951_A_Plus_B_4 {
 
 			System.out.println(a+b);
 		}
-
 	}
 }
