@@ -17,5 +17,6 @@ public class Bak_01_15792_A_Div_B_02 {
 		BigDecimal BigA = new BigDecimal(st.nextToken());
 		BigDecimal BigB = new BigDecimal(st.nextToken());
 
+		System.out.println(BigA.divide(BigB,1000,BigDecimal.ROUND_HALF_UP));
 	}
 }
