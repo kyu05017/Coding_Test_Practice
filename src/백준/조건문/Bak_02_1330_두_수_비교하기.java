@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Bak_01_1330_두_수_비교하기 {
+public class Bak_02_1330_두_수_비교하기 {
 
 	public static void main(String[] args)throws Exception{
 
