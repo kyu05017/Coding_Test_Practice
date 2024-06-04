@@ -3,7 +3,7 @@ package 백준.조건문;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class Bak_01_2884_알람_시계 {
+public class Bak_02_2884_알람_시계 {
 
 	public static void main(String[] args) throws IOException{
 
