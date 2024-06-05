@@ -15,8 +15,5 @@ public class Bak_02_2525_오븐시계 {
 		int min = Integer.parseInt(nowTime[1]);
 
 		int target = sc.nextInt();
-
-
-
 	}
 }
