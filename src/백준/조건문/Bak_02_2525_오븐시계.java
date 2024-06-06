@@ -15,5 +15,17 @@ public class Bak_02_2525_오븐시계 {
 		int min = Integer.parseInt(nowTime[1]);
 
 		int target = sc.nextInt();
+
+		System.out.println(hour );
+		System.out.println(min);
+		System.out.println(target );
+
+
+		int tempTimeHour = 60/target;
+		int tempTimeMin = 60%target;
+
+		System.out.println(tempTimeHour);
+		System.out.println(tempTimeMin);
+
 	}
 }
