@@ -27,5 +27,7 @@ public class Bak_02_2525_오븐시계 {
 		System.out.println(tempTimeHour);
 		System.out.println(tempTimeMin);
 
+
+		/**/
 	}
 }
