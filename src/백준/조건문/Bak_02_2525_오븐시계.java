@@ -28,6 +28,6 @@ public class Bak_02_2525_오븐시계 {
 		System.out.println(tempTimeMin);
 
 
-		/**/
+		/* 해야 하는대ㅔ....*/
 	}
 }
