@@ -28,6 +28,6 @@ public class Bak_02_2525_오븐시계 {
 		System.out.println(tempTimeMin);
 
 
-		/* .*/
+		/*  월요일은 힘들어!!.*/
 	}
 }
