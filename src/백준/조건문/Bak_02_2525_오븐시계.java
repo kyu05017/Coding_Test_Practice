@@ -1,12 +1,18 @@
 package 백준.조건문;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
 public class Bak_02_2525_오븐시계 {
 
-	public static void main(String[] args){
+	public static void main(String[] args) throws IOException {
 
 		Scanner sc = new Scanner(System.in);
+		StringBuilder sb = new StringBuilder();
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
 		int hour = sc.nextInt();
 		int min = sc.nextInt();
@@ -21,6 +27,8 @@ public class Bak_02_2525_오븐시계 {
 		}
 		resultHour = (resultHour > 23)?resultHour-24:resultHour;
 
-		System.out.println(resultHour+" "+resultMin);
+		bw.write(sb.append(resultHour).append(" ").append(resultMin).toString());
+		bw.flush();
+		bw.close();
 	}
 }
