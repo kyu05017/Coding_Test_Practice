@@ -8,26 +8,19 @@ public class Bak_02_2525_오븐시계 {
 
 		Scanner sc = new Scanner(System.in);
 
-		String now = sc.nextLine();
-		String[] nowTime = now.split(" ");
-
-		int hour = Integer.parseInt(nowTime[0]);
-		int min = Integer.parseInt(nowTime[1]);
-
+		int hour = sc.nextInt();
+		int min = sc.nextInt();
 		int target = sc.nextInt();
 
-		System.out.println(hour );
-		System.out.println(min);
-		System.out.println(target );
+		int resultHour = hour+(target/60);
+		int resultMin = min+(target%60);
 
+		if(resultMin >= 60){
+			resultMin -= 60;
+			resultHour++;
+		}
+		resultHour = (resultHour > 23)?resultHour-24:resultHour;
 
-		int tempTimeHour = 60/target;
-		int tempTimeMin = 60%target;
-
-		System.out.println(tempTimeHour);
-		System.out.println(tempTimeMin);
-
-
-		/*  월요일은 힘들어!!.*/
+		System.out.println(resultHour+" "+resultMin);
 	}
 }
