@@ -20,6 +20,7 @@ public static void main(String[] args)throws IOException {
 			int b = Integer.parseInt(st.nextToken());
 
 			System.out.println(a+b);
+			//?
 		}
 
 	}
