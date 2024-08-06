@@ -24,7 +24,6 @@ public class 소수__만들기 {
 				for(int k=j+1; k<nums.length; k++){
 					//배열 중 3개 더하기
 					sum = nums[i]+nums[j]+nums[k];
-					System.out.println(sum);
 					//소수 찾기(소수이면 +1)
 					if(isPrime(sum)){
 						answer++;
