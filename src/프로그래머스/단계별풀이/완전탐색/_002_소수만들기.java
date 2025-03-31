@@ -1,6 +1,6 @@
 package 프로그래머스.단계별풀이.완전탐색;
 
-public class _001_소수만들기 {
+public class _002_소수만들기 {
 	public static void main(String[] args) {
 		System.out.println(solution(new int[]{1,2,7,6,4}));
 	}
