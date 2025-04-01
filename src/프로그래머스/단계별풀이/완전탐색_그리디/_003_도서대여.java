@@ -6,7 +6,7 @@ import java.util.List;
 
 public class _003_도서대여 {
 	public static void main(String[] args) {
-		System.out.println(solution(5, new int[]{2,4}, new int[]{1,2,3}));
+		System.out.println(solution2(5, new int[]{2,4}, new int[]{1,3,5}));
 	}
 
 	public static int solution(int n, int[] lost, int[] reserve) {
@@ -64,5 +64,48 @@ public class _003_도서대여 {
 		}
 
 		return n-realLost.size();
+	}
+	// 리팩토링 코드
+	private static int solution2(int n, int[] lost, int[] reserve){
+		int answer = 0;
+
+		Arrays.sort(lost);
+		Arrays.sort(reserve);
+
+		List<Integer> realLost = new ArrayList<>();
+		List<Integer> realReserve = new ArrayList<>();
+
+		for(int l : lost){
+			boolean hasSpare = false;
+			for(int i = 0; i < reserve.length; i++){
+				if(l == reserve[i]){
+					reserve[i] = -1;
+					hasSpare = true;
+					break;
+				}
+			}
+			if(!hasSpare)realLost.add(l);
+		}
+
+		for(int i : reserve){
+			if(i != -1){
+				realReserve.add(i);
+			}
+		}
+
+		System.out.println("진짜 도둑 맞은 놈들 : " + realLost.toString());
+		System.out.println("진짜 옷 입을 놈들 : " + realReserve.toString());
+
+		for(int i : realReserve){
+			if(realLost.contains(i-1)){
+				realLost.remove((Integer)(i-1));
+			} else if(realLost.contains(i+1)){
+				realLost.remove((Integer)(i+1));
+			}
+		}
+
+		System.out.println("못입는 놈들 : "+realLost.toString());
+
+		return n - realLost.size();
 	}
 }
