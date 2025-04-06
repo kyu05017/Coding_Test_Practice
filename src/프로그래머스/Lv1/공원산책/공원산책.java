@@ -389,73 +389,73 @@ public class 공원산책 {
 			}
 		}
 
+		// 좌우크기 채번
 		int v = temp.length;
 		int h = temp[0].length;
 
 		// 이동
-		for(int i = 0; i < routes.length;i++){
-			String d = routes[i].split(" ")[0];
-			int m = Integer.parseInt(routes[i].split(" ")[1]);
-
+		for (String route : routes) {
+			String d = route.split(" ")[0];
+			int m = Integer.parseInt(route.split(" ")[1]);
 
 			boolean isOkay = true;
 			// 동
-			if(d.equals("E")) {
+			if (d.equals("E")) {
 				if ((answer[1] + m) > h - 1) {
 					continue;
 				}
 				for (int j = answer[1]; j < h; j++) {
 					if (temp[answer[0]][j].equals("X")) {
-						if(answer[1]+m >= j){
+						if (answer[1] + m >= j) {
 							isOkay = false;
 						}
 					}
 				}
-				if(isOkay){
+				if (isOkay) {
 					answer[1] += m;
 				}
-			} else if(d.equals("W")){
-				if((answer[1] + (m*-1)) < 0){
+			} else if (d.equals("W")) {
+				if ((answer[1] + (m * -1)) < 0) {
 					continue;
 				}
-				for (int j = answer[1]; j >= 0 ; j--) {
+				for (int j = answer[1]; j >= 0; j--) {
 					if (temp[answer[0]][j].equals("X")) {
-						if((answer[1] + (m*-1)) <= j){
+						if ((answer[1] + (m * -1)) <= j) {
 							isOkay = false;
 						}
 
 					}
 				}
-				if(isOkay) {
+				if (isOkay) {
 					answer[1] -= m;
 				}
-			} else if(d.equals("S")){
-				if((answer[0] + m) > v-1){
+			} else if (d.equals("S")) {
+				if ((answer[0] + m) > v - 1) {
 					continue;
 				}
-				for(int j = answer[0];j<v;j++){
-					if(temp[j][answer[1]].equals("X")){
-						if((answer[0] + m) >= j){
+				for (int j = answer[0]; j < v; j++) {
+					if (temp[j][answer[1]].equals("X")) {
+						if ((answer[0] + m) >= j) {
 							isOkay = false;
 						}
 					}
 				}
-				if(isOkay) {
+				if (isOkay) {
 					answer[0] += m;
 				}
-			} else if(d.equals("N")){
-				if((answer[0] + (m*-1)) < 0){
+			} else if (d.equals("N")) {
+				if ((answer[0] + (m * -1)) < 0) {
 					continue;
 				}
 
-				for(int j = answer[0]; j >= 0; j--){
-					if(temp[j][answer[1]].equals("X")){
-						if((answer[0] + (m*-1)) <= j){
+				for (int j = answer[0]; j >= 0; j--) {
+					if (temp[j][answer[1]].equals("X")) {
+						if ((answer[0] + (m * -1)) <= j) {
 							isOkay = false;
 						}
 					}
 				}
-				if(isOkay) {
+				if (isOkay) {
 					answer[0] -= m;
 				}
 			}

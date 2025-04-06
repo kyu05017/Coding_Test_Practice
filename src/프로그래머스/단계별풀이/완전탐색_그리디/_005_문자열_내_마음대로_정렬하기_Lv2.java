@@ -1,11 +1,8 @@
 package 프로그래머스.단계별풀이.완전탐색_그리디;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
-public class _005_문자열_내_마음대로_정렬하기 {
+public class _005_문자열_내_마음대로_정렬하기_Lv2 {
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(solution(new String[]{"sun", "bed", "car"},1)));
 	}

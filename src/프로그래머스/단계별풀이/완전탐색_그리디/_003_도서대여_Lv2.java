@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class _003_도서대여 {
+public class _003_도서대여_Lv2 {
 	public static void main(String[] args) {
 		System.out.println(solution2(5, new int[]{2,4}, new int[]{1,3,5}));
 	}
