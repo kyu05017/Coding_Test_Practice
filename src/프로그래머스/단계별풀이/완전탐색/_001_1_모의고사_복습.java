@@ -63,6 +63,6 @@ public class _001_1_모의고사_복습 {
 			answer[i] = answer_list.get(i)+1;
 		}
 
-		return answer;
+		return answer_list.stream().mapToInt(Integer::intValue).toArray();
 	}
 }
