@@ -33,5 +33,6 @@ public class _005_문자열_내_마음대로_정렬하기_Lv2 {
 				return Character.compare(c1,c2);
 			}
 		});
+		return strings;
 	}
 }
