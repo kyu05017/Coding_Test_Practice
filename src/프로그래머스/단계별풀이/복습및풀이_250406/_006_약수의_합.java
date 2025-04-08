@@ -1,4 +1,4 @@
-package 프로그래머스.단계별풀이.복습풀이_250406;
+package 프로그래머스.단계별풀이.복습및풀이_250406;
 
 public class _006_약수의_합 {
 	public static void main(String[] args) {

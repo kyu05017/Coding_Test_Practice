@@ -1,4 +1,4 @@
-package 프로그래머스.단계별풀이.복습풀이_250406;
+package 프로그래머스.단계별풀이.복습및풀이_250406;
 
 public class _011_최대값_최소값 {
 	public static void main(String[] args) {
