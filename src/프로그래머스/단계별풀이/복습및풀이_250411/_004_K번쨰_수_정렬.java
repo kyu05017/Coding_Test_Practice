@@ -2,7 +2,7 @@ package 프로그래머스.단계별풀이.복습및풀이_250411;
 
 import java.util.Arrays;
 
-public class K번쨰_수 {
+public class _004_K번쨰_수_정렬 {
 	public static void main(String[] args) {
 		System.out.println(Arrays.toString(solution(new int[]{1,5,2,6,3,7,4}, new int[][]{{2,5,3},{4,4,1},{1,7,3}})));
 	}
