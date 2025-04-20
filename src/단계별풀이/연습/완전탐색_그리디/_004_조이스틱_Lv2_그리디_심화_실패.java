@@ -113,7 +113,7 @@ public class _004_조이스틱_Lv2_그리디_심화_실패 {
 		// 알파벳을 숫자로 변환해서 리스트에 저장
 		List<Integer> list = new ArrayList<>();
 		for(char c : name.toCharArray()){ //문자열을 아스키코드로 변환
-			int temp = c = 'A'; // 변환된 아스키 코드에서 -65(A)를 해서 A가 0이 되게 만든다
+			int temp = c - 'A'; // 변환된 아스키 코드에서 -65(A)를 해서 A가 0이 되게 만든다
 			list.add(temp); // 만들어진 A ~ Z / 0 ~ 25를 리스트에 정수로 담는다.
 		}
 
