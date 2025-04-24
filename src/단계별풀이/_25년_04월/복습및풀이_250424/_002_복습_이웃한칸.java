@@ -4,7 +4,6 @@ public class _002_복습_이웃한칸 {
 	public static void main(String[] args) {
 		solution(new String[][]{{"blue", "red", "orange", "red"},{"red", "red", "blue", "orange"},{"blue", "orange", "red", "red"},{"orange", "orange", "red", "blue"}},1,1);
 	}
-
 	public static int solution(String[][] board, int h, int w) {
 		int answer = 0;
 
