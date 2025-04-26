@@ -10,7 +10,7 @@ public class _001_패턴반복연습_1 {
 		for(int i = 0; i < a.length; i++){
 			int idx = i % b.length;
 			System.out.print("a : "+a[i]);
-			System.out.print("b :"+ b[idx]+"\n");
+			System.out.print("  b :"+ b[idx]+"\n");
 		}
 	}
 }
