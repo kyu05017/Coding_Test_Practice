@@ -1,9 +1,8 @@
 package 단계별풀이._25년_04월.복습및풀이_250426;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class _006_PCCP_외톨이알파벳 {
+public class _006_PCCP_외톨이알파벳_복습필요 {
 	public static void main(String[] args) {
 		System.out.println(solution("edeaaabbccd"));
 	}

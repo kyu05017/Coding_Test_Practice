@@ -1,8 +1,6 @@
 package 단계별풀이._25년_04월.복습및풀이_250426;
 
-import java.util.*;
-
-public class _007_PCCP_체육대회 {
+public class _007_PCCP_체육대회_DFS_복습필요 {
 	public static void main(String[] args) {
 		System.out.println(solution(new int[][]{{40, 10, 10},{20, 5, 0},{30, 30, 30},{70, 0, 70},{100, 100, 100}}));
 	}
