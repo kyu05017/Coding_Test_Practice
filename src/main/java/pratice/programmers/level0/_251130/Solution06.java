@@ -1,4 +1,4 @@
-package main.java.pratice.programmers.level0;
+package main.java.pratice.programmers.level0._251130;
 
 /*
  * 🟡 문제 6 — 문자열 속 특정 문자 개수 구하기

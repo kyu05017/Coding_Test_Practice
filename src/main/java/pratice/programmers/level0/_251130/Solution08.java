@@ -1,4 +1,4 @@
-package main.java.pratice.programmers.level0;
+package main.java.pratice.programmers.level0._251130;
 
 /*
  * 🟠 문제 8 — 문자열 속 숫자만 추출해서 합 구하기

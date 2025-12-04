@@ -1,4 +1,4 @@
-package main.java.pratice.programmers.level0;
+package main.java.pratice.programmers.level0._251130;
 
 /*
  * 🟠 문제 9 — 행렬의 덧셈

@@ -1,4 +1,4 @@
-package main.java.pratice.programmers.level0;
+package main.java.pratice.programmers.level0._251130;
 
 /*
  * 🟡 문제 5 — 배열에서 가장 큰 수와 가장 작은 수 찾기

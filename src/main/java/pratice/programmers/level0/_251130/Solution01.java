@@ -1,4 +1,4 @@
-package main.java.pratice.programmers.level0;
+package main.java.pratice.programmers.level0._251130;
 
 /*
 * 문제 1 — 문자열 뒤집기(기본 중 기본 패턴)

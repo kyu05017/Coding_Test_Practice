@@ -1,4 +1,4 @@
-package main.java.pratice.programmers.level0;
+package main.java.pratice.programmers.level0._251130;
 
 /*
  * 🟠 문제 7 — 배열 뒤집기(직접 구현)
