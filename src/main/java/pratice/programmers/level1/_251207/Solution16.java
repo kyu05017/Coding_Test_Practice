@@ -21,7 +21,7 @@ public class Solution16 {
 	}
 	
 	@SuppressWarnings("all")
-	public static int longestSequence(String str) {
+	public static int longestSequence1(String str) {
 		
 		if(str == null || str.length() == 0)return 0;
 		
@@ -29,6 +29,7 @@ public class Solution16 {
 		int max = cnt;
 		char[] arr = str.toCharArray();
 
+		// 마지막 케이스를 놓치는 케이스가 발생해서 결함 발생
 		for(int i = 0; i < arr.length -1; i++){
 			char now = arr[i];
 			char next = arr[i+1];
@@ -43,8 +44,26 @@ public class Solution16 {
 				cnt = 0;
 			}
 		}
+		return max;
+	}
+	
+	@SuppressWarnings("all")
+	public static int longestSequence(String str) {
+		if (str == null || str.length() == 0) return 0;
+		if (str.length() == 1) return 1;
 		
+		char[] arr = str.toCharArray();
+		int cnt = 1;           // 현재 연속 길이
+		int max = 1;           // 최대 연속 길이
 		
+		for (int i = 1; i < arr.length; i++) {
+			if (arr[i] == arr[i - 1]) {
+				cnt++;
+			} else {
+				cnt = 1;
+			}
+			if (max < cnt) max = cnt;
+		}
 		
 		return max;
 	}

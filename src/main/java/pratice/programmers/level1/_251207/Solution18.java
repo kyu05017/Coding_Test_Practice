@@ -24,24 +24,18 @@ public class Solution18 {
 	@SuppressWarnings("all")
 	public static boolean isPalindrome(String str) {
 		if(str == null || str.length() == 0)return false;
+		String lower = str.toLowerCase();
+		int j = lower.length()-1;
+		int i = 0;
 		
-		char[] arr = str.toCharArray();
-		boolean result = false;
-		int j = arr.length-1;
-		
-		for(int i = 0; i < arr.length; i++){
-			
-			char start = Character.toLowerCase(arr[i]);
-			char end = Character.toLowerCase(arr[j]);
-			
-			if(i != j){
-				if(start == end)result = true;
-			} else break;
-			
-		}
+		while (i < j) {
+			if (lower.charAt(i) != lower.charAt(j)) {
+				return false;          // 하나라도 다르면 바로 false
+			}
+			i++;
 			j--;
+		}
 		
-		
-		return result;
+		return true;// 끝까지 문제 없으면 true
 	}
 }
